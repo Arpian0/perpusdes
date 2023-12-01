@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dashboard</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/logo.png" class="mr-0" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.jpg" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="ti-shopping-cart mx-0"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Buy Now</p>
+              <a href="https://codecanyon.net/user/rocketsoft" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-primary">
+                    <i class="ti-world mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Purchase Script</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Price : $55
+                  </p>
+                </div>
+              </a>
+              <a href="https://codecanyon.net/user/rocketsoft" class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-package mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Purchase Plugins</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    from $19
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+       
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+   
+      
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav user-select-none">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">
+              <i class="ti-world menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#general" aria-expanded="false" aria-controls="general">
+              <i class="ti-briefcase menu-icon"></i>
+              <span class="menu-title">General</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="general">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/introduction.html">Introduction</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/license.html">License Activation</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/support.html">Get Support</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/plugin.html">Plugin Bundle</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#installation" aria-expanded="false" aria-controls="installation">
+              <i class="ti-package menu-icon"></i>
+              <span class="menu-title">Installation</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="installation">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="./pages/important.html">Important Points</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/requirements.html">Requirements</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/hosting_recommendation.html">Hosting</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/preparing.html">Preparing</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/installation.html">Installation</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/update.html">How to Update</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/access_admin_panel.html">Access Admin Panel</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/maintenance.html">Maintenance Mode</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#content" aria-expanded="false" aria-controls="content">
+              <i class="ti-write menu-icon"></i>
+              <span class="menu-title">Content</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="content">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/create_a_class.html">Create a Class</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/review_classes.html">Review a Class</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/conduct_live_classes.html">Conducting Live Classes</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/categories.html">Class Categories</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/filters.html">Class Filters</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/quizzes.html">Quizz & Certificates</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/certificate_validation.html">Certificate Validation</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/meetings.html">Meetings</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/class_reviews.html">Class Reviews</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/create_custom_pages.html">Custom Pages</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/footer.html">Footer</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#users" aria-expanded="false" aria-controls="users">
+              <i class="ti-user menu-icon"></i>
+              <span class="menu-title">Users</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="users">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/user_roles.html">User Roles</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/user_groups.html">User Groups</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/become_instructor.html">Become Instructor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/organization_users.html">Organization Users</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#crm" aria-expanded="false" aria-controls="crm">
+              <i class="ti-direction-alt menu-icon"></i>
+              <span class="menu-title">CRM</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="crm">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/notification_templates.html">Notifications</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/noticeboard.html">Noticeboard</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/class_support_messages.html">Classes Support</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/reports.html">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#marketing" aria-expanded="false" aria-controls="marketing">
+              <i class="ti-pie-chart menu-icon"></i>
+              <span class="menu-title">Marketing</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="marketing">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/discount_code.html">Discount Codes</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#financial" aria-expanded="false" aria-controls="financial">
+              <i class="ti-money menu-icon"></i>
+              <span class="menu-title">Financial</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="financial">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/balances_list.html">Balances List</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/payout_requests.html">Request Payout</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/payout.html">Payout Process</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/offline_payment.html">Offline Payments</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/subscribe.html">Subscribe</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/sales_list.html">Sales List</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="settings">
+              <i class="ti-settings menu-icon"></i>
+              <span class="menu-title">Settings</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="settings">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/general_settings.html">General</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/financial_settings.html">Financial</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/payment_gateways.html">Payment Gateways</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/personalization.html">Personalization</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/seo.html">SEO Settings</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/seo.html">Security Settings</a></li>
+
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#configuration" aria-expanded="false" aria-controls="configuration">
+              <i class="ti-panel menu-icon"></i>
+              <span class="menu-title">Configuration</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="configuration">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/smtp.html">SMTP Configuration</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/zoom.html">Zoom Integration</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/amazon_s3.html">Amazon S3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/debugger.html">Debugger</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/file_manager.html">File Manager</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/google_sign_in.html">Google Sign-in</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/cronjobs.html">CronJobs</a></li>
+              </ul>
+            </div>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#cutomization" aria-expanded="false" aria-controls="cutomization">
+              <i class="ti-palette menu-icon"></i>
+              <span class="menu-title">Cutomization</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="cutomization">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./pages/language.html">Languages</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/custom_css_js.html">Custom CSS & JS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/timezone.html">Timezone</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/colors.html">Change Colors</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./pages/fonts.html">Change Fonts</a></li>
+
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/credits.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Credits</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+      <!-- content -->
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Welcome to Rocket LMS Documentation</h3>
+                  <h6 class="font-weight-normal mb-0 text-muted">Here we will help you to get acquainted with the different functions of the script.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-people mt-0">
+                  <img src="images/people.png" alt="people">
+                  <div class="weather-info">
+                    <div class="d-flex">
+                      <div>
+                        <h2 class="mb-0 font-weight-normal"><i class="ti-star mr-2"></i></h2>
+                      </div>
+                      <div class="ml-2">
+                        <h4 class="location font-weight-bold">Rocket</h4>
+                        <h6 class="font-weight-normal">Soft</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 grid-margin transparent">
+              <div class="row">
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <p class="mb-4">Get additional services in</p>
+                      <p class="fs-30 mb-2">Rocket CRM</p>
+                      <p>Free installation, Support tickets, etc.</p>
+                      <a href="https://crm.rocket-soft.org" class="float-right btn btn-light">Open CRM</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-dark-blue">
+                    <div class="card-body">
+                      <p class="mb-4">Check the live demo before buying</p>
+                      <p class="fs-30 mb-2">Rocket LMS Demo</p>
+                      <p>Some functions might be disabled in the demo</p>
+                      <a href="https://lms.rocket-soft.org" class="float-right btn btn-light">Preview Demo</a>
+      
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+                  <div class="card card-light-blue">
+                    <div class="card-body">
+                      <p class="mb-4">Validate your license</p>
+                      <p class="fs-30 mb-2">License Activation</p>
+                      <p>Support and additional services for validated license</p>
+                      <a href="https://crm.rocket-soft.org/index.php/tickets" class="float-right btn btn-light">Validate License</a>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 stretch-card transparent">
+                  <div class="card card-light-danger">
+                    <div class="card-body">
+                      <p class="mb-4">Get support easily</p>
+                      <p class="fs-30 mb-2">Support Center</p>
+                      <p>Solve your problems by our support center</p>
+                      <a href="https://crm.rocket-soft.org" class="float-right btn btn-warning">Get Support</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-0 mt-5 mb-lg-0 stretch-card transparent">
+                  <div class="card bg-white d-flex align-items-center">
+                    <div class="card-body">
+                      <div class="d-flex flex-row align-items-center">
+                        <i class="ti-youtube text-youtube icon-lg"></i>
+                        <div class="ml-3">
+                          <h6> <a href="https://www.youtube.com/" class="text-youtube text-decoration-none">Subscribe Now</a></h6>
+                          <p class="mt-2 text-muted card-text"> Tutorial videos</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-0 mt-5 mb-lg-0 stretch-card transparent">
+                  <div class="card bg-white d-flex align-items-center">
+                    <div class="card-body">
+                      <div class="d-flex flex-row align-items-center">
+                        <i class="ti-shopping-cart text-primary icon-lg"></i>
+                        <div class="ml-3">
+                          <h6> <a href="https://codecanyon.net/user/rocketsoft" class="text-primary text-decoration-none">Buy Now</a></h6>
+                          <p class="mt-2 text-muted card-text">from Codecanyon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+       <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021. <a href="https://codecanyon.net/user/rocketsoft" target="_blank">Rocket LMS Documentation</a> from <a href="https://codecanyon.net/user/rocketsoft" target="_blank">Rocket Soft</a>. All rights reserved.</span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
